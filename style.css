@@ -8,7 +8,14 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  
+
+.h2 {
+    display: black;
+    color: #000000;
+    
+    
+
+
   .popup-content {
     background-color: #fff;
     max-width: 400px;
