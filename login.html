@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <style>
+   
+    
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+      border-radius: 30px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 80%;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      background-image: url(https://media.istockphoto.com/id/1295949600/vector/seamless-hand-drawn-social-media-elements-pattern-doodle-vector-icons.jpg?s=612x612&w=0&k=20&c=aVclrADqhkn0kAHhgnB1b5QUUCwvFkq3OtUoVycDTEM=);
+      border-radius: 30px;
+    }
+
+    .image-container {
+      flex: 1;
+      height: 100%;
+      background-image: url('https://deadsimplechat.com/images/deadsimpleGroup-chat1.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .form-container {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      box-shadow: #4CAF50;
+      box-shadow: #434343;
+      box-shadow: 0 15px 30px rgba(162, 162, 162, 0.3);
+      transition: all 0.5s ease;
+      height: 400px;
+      border-radius: 30px;
+      
+    }
+
+    .form-container:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .form-container h1 {
+      text-align: center;
+      
+    }
+      
+    
+
+    .form-container input[type="text"],
+    .form-container input[type="password"] {
+      display: block;
+      margin: 10px auto;
+      padding: 5px;
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .form-container button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      width: 80%;
+      background-color: #383838;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 55px;
+    color: #000000;
+    
+    }
+
+
+
+
+
+   
+    
+
+
+
+
+
+
+
+    .tear-design {
+  position: relative;
+}
+
+.tear-design::before,
+.tear-design::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.tear-design::before {
+  left: 50%;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.tear-design::after {
+  right: 50%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-container"></div>
+    <div class="form-container">
+        <h1>Login</h1>
+        <br>
+      <input type="text" id="username" placeholder="Username" required>
+      <br>
+      <input type="password" id="password" placeholder="Password" required>
+      <br>
+      <button onclick="checkLogin()">Login</button>
+    </div>
+  </div>
+
+  <script>
+    function checkLogin() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Add your password validation logic here
+      if (password === 'your_password') {
+        // Redirect to your other website
+        window.location.href = 'https://www.yourotherwebsite.com';
+      }
+    }
+
+    // Set a cookie to indicate that the user has logged in successfully
+document.cookie = "loggedIn=true; path=/";
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Redirect</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      font-size: 36px;
+      margin-top: 150px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Redirecting You, Please Wait.</h1>
+
+  <script>
+    // Check if the user is already logged in
+    var loggedIn = getCookie('loggedIn');
+
+    if (!loggedIn) {
+      // User is not logged in, redirect back to the other website's login page
+      window.location.href = 'https://www.yourotherwebsite.com/login';
+    } else {
+      // User is logged in, redirect to the intended destination
+      window.location.href = 'https://www.yourotherwebsite.com';
+    }
+
+    // Function to get a cookie value
+    function getCookie(name) {
+      var nameEQ = name + '=';
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+  </script>
+</body>
+</html>
