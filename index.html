@@ -1,23 +1,61 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ShaZan</title>
-  <script>
-    window.addEventListener('load', function() {
-      var audio = new Audio('https://dl.dropboxusercontent.com/s/mjzzg82whker6ct/Record%20%28online-voice-recorder.com%29.mp3'); // Replace 'sound.mp3' with the URL or path to your audio file
-      audio.play();
-    });
-  </script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <!-- Your page content here -->
+  <!-- Login Popup -->
+  <div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <h2>Welcome to Our Website!</h2>
+      <p>Please enter your name and password to login:</p>
+      <input type="text" id="nameInput" placeholder="Enter your name" required>
+      <input type="password" id="passwordInput" placeholder="Enter your password" required>
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <!-- Include JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -133,6 +171,7 @@ footer {
   
   </body>
   </html>
+
 
 
 
