@@ -18,7 +18,7 @@ if (!localStorage.getItem("visited")) {
     localStorage.setItem("name", name);
   
     // Check password
-    if (password === "your_password_here") {
+    if (password === "1-1") {
       // Successful login, do something
       alert("Login successful!");
     } else {
